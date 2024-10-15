@@ -1,9 +1,15 @@
+import { Button } from "@/components/ui/button";
+import Link from "next/link";
+
 export default function Home() {
   return (
-    <div className="grid min-h-screen grid-rows-[20px_1fr_20px] items-center justify-items-center gap-16 p-8 pb-20 font-[family-name:var(--font-geist-sans)] sm:p-20">
-      <main className="row-start-2 flex flex-col items-center gap-8 sm:items-start">
-        Hello world
-      </main>
-    </div>
+    <main className="mx-auto flex h-screen max-w-5xl flex-col justify-center gap-6 text-center">
+      <h1 className="text-5xl font-bold">Invoicipedia</h1>
+      <p>
+        <Button asChild>
+          <Link href="/dashboard">Sign In</Link>
+        </Button>
+      </p>
+    </main>
   );
 }
