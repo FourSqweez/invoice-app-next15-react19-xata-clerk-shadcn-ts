@@ -1,3 +1,4 @@
+import { createAction } from "@/app/actions";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
@@ -10,7 +11,7 @@ const InvoicePage = () => {
         <h1 className="text-3xl font-bold">Create Invoices</h1>
       </div>
 
-      <form className="grid max-w-xs gap-4" action="">
+      <form action={createAction} className="grid max-w-xs gap-4">
         <div>
           <Label htmlFor="name" className="mb-2 block text-sm font-semibold">
             Billing Name
